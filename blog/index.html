@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>MachinableAI Home</title>
+        <meta charset="UTF-8">  
+        <meta name="description" content="Free tools for Machine Learning and Deep Learning involving ML algorithms, Computer Vision, Natural Language Processing and Reinforcement Learning">
+        <meta name="keywords" content="Machine Learning, Artificial Inteligence, Python, Computer Vision, Natural Language Processing">
+        <meta name="author" content="Igor Machado de Castro">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+        <link href="assets/css/main.css" rel="stylesheet" type="text/css"/>
+        <script src="assets/js/main.js" type="text/javascript"></script>
+        <script type="text/javascript">WebFont.load({  google: {    families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic","Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic","Fjalla One:regular"]  }});</script>
+        <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>        
+    </head>
+    <body>
+        <div class="sidebar-column">
+            <div class="navigation-bar w-nav" data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner">
+                <div class="w-container"><a class="logo-link w-nav-brand" href="#">
+                    <a class="navbar-brand logo" href="../index.html">
+                        <img src="assets/img/logo-dark.png" class="logo">
+                    </a>
+                    <br/><br/>
+                    <a aria-current="page" class="nav-link w-nav-link w--current" href="#">
+                        Search posts
+                        <input id="blogSearch" />
+                    </a>
+                    <nav class="navigation-menu w-nav-menu" role="navigation">
+                        <p class="main-subheading w-hidden-medium w-hidden-small w-hidden-tiny">
+                            Blog about Reinforcement Learning and so on
+                        </p>                        
+                        <div class="divider"></div>
+                        <div class="social-link-group">
+                            <a class="social-icon-link w-inline-block" target="_blank" href="https://www.linkedin.com/company/machinableai/"><img alt="" src="https://assets.website-files.com/5e4b19aa01d14d49bd4eabde/5e4b19aa01d14d15664eac6c_social-09-white.svg" width="25"/>
+                            </a>
+                        </div>
+                    </nav>
+                    <div class="menu-button w-nav-button">
+                        <div class="w-icon-nav-menu">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">            
+            <div class="blog-list w-dyn-list">
+                <div class="w-dyn-items" role="list">
+                    <div class="w-dyn-item" role="listitem">
+                        <div class="post-wrapper">
+                            <a class="blog-title-link w-inline-block" href="posts/image-preprocessing.html">
+                                <h1 class="blog-title">
+                                    Image Preprocessing for Computer Vision
+                                </h1>
+                            </a>
+                            <div class="post-info-wrapper">
+                                <div class="post-info">
+                                    September 10, 2022
+                                </div>
+                                <div class="post-info">|</div>
+                                <a class="post-info when-link" href="#">Computer Vision</a>
+                            </div>
+                            <p class="post-summary">
+                                <img src="../images/blog/post-1.jpg" class="post-images" />
+                                Computer Vision is an umbrella term, where various tasks make up this sub-area of Artificial Intelligence. One of these tasks is Image Processing.<br/>
+                                The image processing has an image as input and the output is a set of numerical values that will serve as the basis for Computer Vision solutions with the objective of optimizing the machine learning model and consequently the final result of the solution...
+                            </p>
+                            <a class="button-round w-button" href="posts/image-preprocessing.html">
+                                Continue reading →
+                            </a>
+                        </div>
+                    </div>
+                    <div class="button-wrapper">
+                        <a class="button w-button" href="#">
+                            More posts →
+                        </a>
+                    </div>
+                </div>
+                <script src="assets/js/menu.js" type="text/javascript"></script>
+                <script src="assets/js/menu-2.js" type="text/javascript"></script>
+                <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+    $(document).ready(function(){
+      $("#blogSearch").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $(".content").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+</script>
